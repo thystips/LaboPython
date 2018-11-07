@@ -44,13 +44,16 @@ def ex5():
             break
         elif hey != "bien":
             i += 1
+        elif hey == "bien":
+            print("Je m'en badigeonne les testicules avec le pinceau de l'indifférence")
+            break
         else:
             print("Ceci est extrêmement dommage !\n")
             break
     return
 
 
-Choix = input("Choisi ton exercice du con\n")
+Choix = input("Choisis ton exercice du con\n")
 
 
 if Choix == "1":
