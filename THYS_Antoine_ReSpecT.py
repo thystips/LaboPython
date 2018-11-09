@@ -76,7 +76,16 @@ nombre d’entiers à trier.""",
             print("Take one down, pass it around,", suffix)
             print("--")
 
-    # def file(self):
+    def file(self):
+        name = sys.argv[2]
+        for arg in sys.argv[3:]:
+            if arg == ("-w"):
+                text = sys.argv[4:]
+                open("{}.txt".format(name), "w+").write(str(" ".join(text)))
+            if arg == ("-r"):
+                f = open("{}.txt".format(name), "r")
+                print(f.read())
+                f.close()
 
 
 if __name__ == "__main__":
