@@ -14,14 +14,24 @@ class ReSpecT(object):
             usage="""
 python THYS_Antoine_ReSpecT.py <commande> [PARAM].
 Les fonctions du programme:
-   coucou      Affiche “Coucou à toi aussi.”
-   push -f     Affiche “NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !”
-   upsideDown  Affiche [PARAM] à l’envers.
-   montre      Affiche l’heure courante
-   trie        Affiche la liste des entiers passés en paramètres dans l’ordre croissant. [NB] est le
-nombre d’entiers à trier.
-   trie -desc  Affiche la liste des entiers passés en paramètres dans l’ordre décroissant. [NB] est le
-nombre d’entiers à trier.""",
+   coucou :
+        Affiche “Coucou à toi aussi.”
+   push -f :
+        Affiche “NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !”
+   upsideDown :
+        Affiche [PARAM] à l’envers.
+   montre :
+        Affiche l’heure courante
+   trie :
+       Affiche la liste des entiers passés en paramètres dans l’ordre croissant. [NB] est le nombre d’entiers à trier.
+   trie -desc :
+        Affiche la liste des entiers passés en paramètres dans l’ordre décroissant. [NB] est le nombre d’entiers à trier.
+    soif :
+        Affiche les paroles de la chanson 99 Bottles of beer.
+    file [NAME] -w [CONTENT] :
+        Créé un nouveau fichier [NAME] avec pour contenu [CONTENT].
+    file [NAME] -r
+        Afficher le contenu de fichier [NAME].""",
         )
         parser.add_argument("command", help="Nom de la fonction à exécuter")
         args = parser.parse_args(sys.argv[1:2])
@@ -90,4 +100,3 @@ nombre d’entiers à trier.""",
 
 if __name__ == "__main__":
     ReSpecT()
-
