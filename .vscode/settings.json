@@ -4,5 +4,15 @@
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
     "editor.formatOnSave": true,
-	"editor.formatOnPaste": false,
+    "editor.formatOnPaste": false,
+    "python.linting.pylintEnabled": true,
+    "spellright.language": [
+        "fr"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "python"
+    ],
 }

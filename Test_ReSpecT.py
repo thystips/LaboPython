@@ -14,8 +14,10 @@ class ReSpecT(object):
             usage="""
 python THYS_Antoine_ReSpecT.py <commande> [PARAM].
 Les fonctions du programme:
-   coucou      Affiche “Coucou à toi aussi.”
-   push -f     Affiche “NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !”
+   coucou
+        Affiche “Coucou à toi aussi.”
+   push -f
+        Affiche “NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !”
    upsideDown  Affiche [PARAM] à l’envers.
    montre      Affiche l’heure courante
    trie        Affiche la liste des entiers passés en paramètres dans l’ordre croissant. [NB] est le
