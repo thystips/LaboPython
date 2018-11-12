@@ -36,20 +36,24 @@ Les fonctions du programme:
         parser.add_argument("command", help="Nom de la fonction à exécuter")
         args = parser.parse_args(sys.argv[1:2])
         if not hasattr(self, args.command):
-            print("Commande non reconnue")
+            print(
+                "Commande non reconnue, tu sais même pas lire le menu d'aide avant connard"
+            )
             parser.print_help()
             exit(1)
         getattr(self, args.command)()
 
     def coucou(self):
-        print("Coucou à toi aussi.")
+        print("Coucou à toi aussi du con :)")
 
     def push(self):
         parser = argparse.ArgumentParser()
         parser.add_argument("-f", "--force", action="store_true")
         args = parser.parse_args(sys.argv[2:])
         if args.force:
-            print("NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !")
+            print(
+                "NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU ! JE VAIS TE CASSER TA PETITE GUEULE DE CON !!!"
+            )
 
     def upsidedown(self):
         parser = argparse.ArgumentParser()
@@ -62,7 +66,12 @@ Les fonctions du programme:
     def montre(self):
         montre = datetime.datetime.now()
         date = montre.strftime("%Y/%m/%d-%H:%M")
-        print(date)
+        print(
+            "Tu veux l'heure.\nMais putain tout le monde a une montre, un téléphone ou autre chose.\nTu devrais bien avoir l'heure non ?\nMais bon tiens voilà : ",
+            date,
+        )
+
+    #   print(date)
 
     def trie(self):
         if "-desc" in sys.argv:
@@ -85,6 +94,7 @@ Les fonctions du programme:
                 suffix = "no more beer on the wall!"
             print("Take one down, pass it around,", suffix)
             print("--")
+            print("ALCOOLIQUE !!!!!!! Putain d'ALLLCCOOOOLIIIIQUUUUUUUE")
 
     def file(self):
         name = sys.argv[2]
