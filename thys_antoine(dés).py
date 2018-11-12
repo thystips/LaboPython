@@ -6,25 +6,23 @@ import unittest
 #    (entre 2 et 12). La fonction donne le nombre de façons de faire cet
 #    entier en lançant deux dés.
 
+
 def deux_des(nombre):
     if nombre < 8:
         return nombre - 1
     else:
         return 13 - nombre
 
+
 # Exercice 2
 #    Créer une fonction appelée trois_des qui prend un entier en paramètre
 #    (entre 3 et 18). La fonction donne le nombre de façons de faire cet
 #    entier en lançant trois dés.
 
+
 def trois_des(nombre):
-    nb_possibilites = 0
-    for valeur_de_1 in range(1, 7):
-        for valeur_de_2 in range(1, 7):
-            for valeur_de_3 in range(1, 7):
-                if valeur_de_1 + valeur_de_2 + valeur_de_3 == nombre:
-                    nb_possibilites +=1
-    return nb_possibilites
+    liste = list(range(1, 7)) + list(range(5, 0, -1))
+    return sum(liste[max(0, nombre - 8) : nombre - 2])
 
 
 # Exercice 3
@@ -32,6 +30,13 @@ def trois_des(nombre):
 #    en paramètre. La fonction renvoie la liste telle que les nombres
 #    non multiples de trois ont été supprimés.
 
+
+def filtre(une_liste_fournie):
+    liste_resultat = []
+    for nombre in une_liste_fournie:
+        if nombre % 3 == 0:
+            liste_resultat.append(nombre)
+    return liste_resultat
 
 
 class Test2Des(unittest.TestCase):

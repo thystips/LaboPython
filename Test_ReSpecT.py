@@ -44,7 +44,7 @@ Les fonctions du programme:
         getattr(self, args.command)()
 
     def coucou(self):
-        print("Coucou à toi aussi du con :)")
+        print("Coucou à toi aussi du con, maintenant tu peux aller te suicider :)")
 
     def push(self):
         parser = argparse.ArgumentParser()
@@ -52,7 +52,7 @@ Les fonctions du programme:
         args = parser.parse_args(sys.argv[2:])
         if args.force:
             print(
-                "NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU ! JE VAIS TE CASSER TA PETITE GUEULE DE CON !!!"
+                "NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !!! JE VAIS TE CASSER TA PETITE GUEULE DE CON !!!"
             )
 
     def upsidedown(self):
@@ -66,11 +66,7 @@ Les fonctions du programme:
     def montre(self):
         montre = datetime.datetime.now()
         date = montre.strftime("%Y/%m/%d-%H:%M")
-        print(
-            "Tu veux l'heure.\nMais putain tout le monde a une montre, un téléphone ou autre chose.\nTu devrais bien avoir l'heure non ?\nMais bon tiens voilà : ",
-            date,
-        )
-
+        print("Tu veux l'heure.\nMais putain tout le monde a une montre, un téléphone ou autre chose.\nTu devrais bien avoir l'heure non ?\nMais bon tiens voilà : ", date)
     #   print(date)
 
     def trie(self):
@@ -107,7 +103,7 @@ Les fonctions du programme:
                 print(f.read())
                 f.close()
 
-
+                
 if __name__ == "__main__":
     ReSpecT()
 
