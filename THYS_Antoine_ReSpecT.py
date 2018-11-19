@@ -49,7 +49,7 @@ Les fonctions du programme:
         parser.add_argument("-f", "--force", action="store_true")
         args = parser.parse_args(sys.argv[2:])
         if args.force:
-            
+
             print("NE JAMAIS FAIRE DE “PUSH FORCE” SUR GIT, SACREBLEU !")
 
     def upsideDown(self):
@@ -92,9 +92,9 @@ Les fonctions du programme:
         for arg in sys.argv[3:]:
             if arg == ("-w"):
                 text = sys.argv[4:]
-                open("{}.txt".format(name), "w+").write(str(" ".join(text)))
+                open("{}".format(name), "w+").write(str(" ".join(text)))
             if arg == ("-r"):
-                f = open("{}.txt".format(name), "r")
+                f = open("{}".format(name), "r")
                 print(f.read())
                 f.close()
 
