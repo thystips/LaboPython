@@ -1,3 +1,5 @@
+# toto
+
 page = """
 Bip Bip et Coyote
 Sauter à la navigationSauter à la recherche
@@ -236,9 +238,3 @@ Politique de confidentialitéÀ propos de WikipédiaAvertissementsContactDévelo
 """
 
 frequances = {}
-
-for caractere in page:
-    if caractere not in frequances:
-        frequances[caractere]=1
-    else:
-        frequances[caractere]+=1
