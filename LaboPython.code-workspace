@@ -9,5 +9,9 @@
 		"python.formatting.provider": "black",
 		"editor.formatOnSave": true,
 		"editor.formatOnPaste": false,
+		"python.formatting.blackPath": "black",
+		"python.linting.enabled": true,
+		"vsintellicode.python.completionsEnabled": true,
+		"python.autoComplete.addBrackets": true,
 	}
 }
