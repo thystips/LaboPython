@@ -235,10 +235,8 @@ Wikipedia® est une marque déposée de la Wikimedia Foundation, Inc., organisat
 Politique de confidentialitéÀ propos de WikipédiaAvertissementsContactDéveloppeursDéclaration sur les témoins (cookies)Version mobileWikimedia Foundation Powered by MediaWiki
 """
 
-frequances = {}
+frequences = {}
 
 for caractere in page:
-    if caractere not in frequances:
-        frequances[caractere]=1
-    else:
-        frequances[caractere]+=1
+    frequences[caractere] = frequences.get(caractere, 0) +1
+    print(frequences)
