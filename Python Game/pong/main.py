@@ -2,13 +2,17 @@
 from tkinter import *
 
 
+vx = 0
+vy = 0
+
+
 def gameTick():
     canvas.move(ball, vx, vy)
 
     fenetre.after(10, gameTick)
 
 
-vx = 0
+vx = 5
 vy = 0
 
 x1 = 510
@@ -30,8 +34,6 @@ Bouton_Quitter.pack()
 
 ball = canvas.create_oval(x1, y1, x2, y2, fill="red", tag="ball")
 line = canvas.create_line(dla, 0, 540, longueur, fill="white", dash=(20, 10), width=4)
-
-
 
 gameTick()
 
