@@ -1,3 +1,4 @@
+#/usr/bin/python3.7
 # coding: utf-8
 from tkinter import *
 
@@ -10,7 +11,7 @@ def gameTick():
 fenetre = Tk()
 canvas = Canvas(fenetre,width=1080, height=720,  bg="black")
 canvas.pack()
-ball = canvas.create_oval(50, 50, 100, 100)
+ball = canvas.create_oval(50, 50, 100, 100, fill="white")
 
 gameTick()
 
