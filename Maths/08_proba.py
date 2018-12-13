@@ -7,5 +7,6 @@ def un_tirage(B, R):
     t2=urne.pop(randrange(len(urne)))
     dico[t1+t2]+=1
 
+    return dico
 
 dico={'BB':0,'BR':0,'RB':0,'RR':0}
