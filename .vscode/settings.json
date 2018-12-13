@@ -5,11 +5,5 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "python.linting.pylintEnabled": true,
-    "spellright.language": ["fr"],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
     "python.linting.pylintPath": "pylint"
 }
