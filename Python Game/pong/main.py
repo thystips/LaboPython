@@ -27,13 +27,14 @@ dlo = longueur / 2
 
 
 fenetre = Tk()
+fenetre.title("Pong")
 canvas = Canvas(fenetre, width=largeur, height=longueur, bg="black")
 canvas.pack()
 Bouton_Quitter = Button(fenetre, text="Quitter", command=fenetre.quit)
 Bouton_Quitter.pack()
 
 ball = canvas.create_oval(x1, y1, x2, y2, fill="red", tag="ball")
-line = canvas.create_line(dla, 0, 540, longueur, fill="white", dash=(20, 10), width=4)
+line = canvas.create_line(dla, 0, dla, longueur, fill="white", dash=(20, 10), width=4)
 
 gameTick()
 
