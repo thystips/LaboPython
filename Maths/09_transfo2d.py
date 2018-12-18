@@ -1,6 +1,8 @@
 # coding: utf-8
 from tkinter import *
 import tkinter as tk
+from math import *
+import numpy as np
 
 
 def transfo2d():
@@ -38,18 +40,39 @@ def transfo2d():
         p1 = pts[traits[2][1]]
         canvas.create_line(px(p0[0], p0[1]), px(p1[0], p1[1]), fill="red", width=4)
 
-    def mult_mat_vect(m, v):
-        res = [0] * 3
-        for l in range(3):
-            for k in range(3):
-                res[l] += m[l][k] * v[k]
-        return res
+    # def rotation(x):
+    #     theta = np.radians(x)
+    #     c, s = np.cos(theta), np.sin(theta)
+    #     if theta > 0:
+    #         R = np.matrix("{} {}; {} {}".format(c, -s, s, c))
+    #         return R
+    #     elif theta == 0:
+    #         return "Erreur"
+    #     else:
+    #         R = np.matrix("{} {}; {} {}".format(c, s, -s, c))
+    #         return R
+
+    def rotate():
+        def mult_mat_vect(m, v):
+            res = [0] * 3
+            for l in range(3):
+                for k in range(3):
+                    res[l] += m[l][k] * v[k]
+            return res
+
+        def rotation():
+            a = int(e.angle.get()) / 180 * pi
+            r = [[cos(a), -sin(a)], [sin(a), cos(a)]]
+            points2 = mult_mat_vect(a, points)
+            dessine_forme(points2)
 
     taille = 515
     tline = 510
     dligne = tline / 2 + 6
     points = [[2, 2], [6, 2], [4, 6]]
     traits = [[0, 1], [1, 2], [2, 0]]
+    x = 30
+    theta = x
 
     fenetre = tk.Tk()
     fenetre.title("transfo2d")
@@ -63,6 +86,11 @@ def transfo2d():
     init_canevas()
 
     dessine_forme(points)
+
+    # rotation(x)
+    # print(rotation(x))
+
+    rotate()
 
     fenetre.mainloop()
 
