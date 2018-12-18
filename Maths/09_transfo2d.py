@@ -63,7 +63,9 @@ def transfo2d():
         def rotation():
             a = int(e.angle.get()) / 180 * pi
             r = [[cos(a), -sin(a)], [sin(a), cos(a)]]
-            points2 = mult_mat_vect(a, points)
+            points2 = []
+            for p in points:
+                points2.append(mult_mat_vect(r, p))
             dessine_forme(points2)
 
     taille = 515
