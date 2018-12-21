@@ -38,5 +38,4 @@ line = canvas.create_line(dla, 0, dla, longueur, fill="white", dash=(20, 10), wi
 
 gameTick()
 
-
 fenetre.mainloop()

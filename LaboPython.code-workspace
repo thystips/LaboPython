@@ -1,7 +1,12 @@
 {
-	"folders": [{
-		"path": "."
-	}],
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Python Game\\pong"
+		}
+	],
 	"settings": {
 		"python.pythonPath": "D:\\dev\\Python\\Python37\\python.exe",
 		"python.formatting.provider": "black",
