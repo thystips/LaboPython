@@ -1,5 +1,7 @@
 # coding: utf-8
 from tkinter import *
+import random
+import time
 
 
 vx = 0
@@ -12,8 +14,8 @@ def gameTick():
     fenetre.after(10, gameTick)
 
 
-vx = 5
-vy = 0
+vx = random.randrange(-4, 4)
+vy = random.randrange(-4, 4)
 
 x1 = 510
 y1 = 320
@@ -37,6 +39,5 @@ ball = canvas.create_oval(x1, y1, x2, y2, fill="red", tag="ball")
 line = canvas.create_line(dla, 0, dla, longueur, fill="white", dash=(20, 10), width=4)
 
 gameTick()
-
 
 fenetre.mainloop()
