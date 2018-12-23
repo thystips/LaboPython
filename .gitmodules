@@ -1,0 +1,10 @@
+[submodule "pong"]
+	path = pong
+	url = https://github.com/antoine33520/pong
+[submodule "Python Game/--force"]
+	path = Python Game/--force
+	url = https://github.com/antoine33520/pong
+[submodule "Python Game/pong"]
+	path = Python Game/pong
+	url = https://github.com/antoine33520/pong
+	branch = master
