@@ -1,7 +1,11 @@
+# /usr/bin/python3.7
 # coding: utf-8
 from tkinter import *
 import random
+<<<<<<< HEAD
 import time
+=======
+>>>>>>> 88c7921e84abea9821eed684b0e530fcd2d7aad8
 
 
 vx = 0
@@ -14,8 +18,8 @@ def gameTick():
     fenetre.after(10, gameTick)
 
 
-vx = random.randrange(-4, 4)
-vy = random.randrange(-4, 4)
+vx = random.randrange(-2, 3)
+vy = random.randrange(-3, 2)
 
 x1 = 510
 y1 = 320
@@ -35,8 +39,14 @@ canvas.pack()
 Bouton_Quitter = Button(fenetre, text="Quitter", command=fenetre.quit)
 Bouton_Quitter.pack()
 
+
 ball = canvas.create_oval(x1, y1, x2, y2, fill="red", tag="ball")
-line = canvas.create_line(dla, 0, dla, longueur, fill="white", dash=(20, 10), width=4)
+line = canvas.create_line(dla, 0, 540, longueur, fill="white", dash=(20, 10), width=4)
+haut = canvas.create_line(1081, 1, 0, 1, fill="red", width=4)
+bas = canvas.create_line(1081, 720, 0, 720, fill="red", width=4)
+droite = canvas.create_line(0, 1, 1, 720, fill="red", width=4)
+gauche = canvas.create_line(1081, 720, 1081, 1, fill="red", width=4)
+
 
 gameTick()
 
