@@ -1,6 +1,3 @@
-[submodule "pong"]
-	path = pong
-	url = https://github.com/antoine33520/pong
 [submodule "Python Game/pong"]
 	path = Python Game/pong
 	url = https://github.com/antoine33520/pong
