@@ -239,4 +239,9 @@ frequences = {}
 
 for caractere in page:
     frequences[caractere] = frequences.get(caractere, 0) +1
-    print(frequences)
+def frequence_carac(item):
+    return item[1]
+
+
+for caractere, frequence in sorted(frequences.items(), key=frequence_carac):
+    print(f'{caractere}=>{frequence}')
