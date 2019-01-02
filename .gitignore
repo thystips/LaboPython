@@ -3,7 +3,6 @@ LaboPython.code-workspace
 .vscode
 .vs
 
-Python Game/pong/.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
