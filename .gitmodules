@@ -2,3 +2,6 @@
 	path = Python Game/pong
 	url = https://github.com/antoine33520/pong
 	branch = master
+[submodule "Projets/site-statique"]
+	path = Projets/site-statique
+	url = https://github.com/antoine33520/site-statique.git
